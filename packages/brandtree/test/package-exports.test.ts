@@ -65,7 +65,7 @@ test("the source API loads through the config loader and the compiled CLI runs",
       cwd: root,
       encoding: "utf8",
     }).trim(),
-  ).toBe("0.0.1");
+  ).toBe(manifest.version);
 });
 
 test("public API declarations resolve outside the workspace", () => {
